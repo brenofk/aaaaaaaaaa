@@ -50,7 +50,7 @@ def AbreArquivoPem():
     return loaded_private_key, loaded_public_key
 
 
-# Faz criptografia e descriptografia com OAEP VERIFICAR
+# Faz criptografia e descriptografia com OAEP -----------VERIFICAR
 def GerarPadding(loaded_public_key, loaded_private_key):
     padding_config = padding.OAEP(
         mgf=padding.MGF1(algorithm=hashes.SHA256()),
